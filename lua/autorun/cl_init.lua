@@ -86,7 +86,7 @@ net.Receive( "GetTrunkContent", function( len, pl )
 
 	if not veh:IsValid() then return end
 
-	local maxtrunk = -1
+	local maxtrunk = defaultTrunkSize
 
 
 	for i=0, #table.GetKeys( customTrunkSize ) do

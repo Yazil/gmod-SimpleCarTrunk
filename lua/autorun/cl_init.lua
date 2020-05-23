@@ -88,7 +88,6 @@ net.Receive( "GetTrunkContent", function( len, pl )
 
 	local maxtrunk = defaultTrunkSize
 
-
 	for i=0, #table.GetKeys( customTrunkSize ) do
 		if veh:GetVehicleClass() == table.GetKeys( customTrunkSize )[i] then
 			maxtrunk = customTrunkSize[veh:GetVehicleClass()]
